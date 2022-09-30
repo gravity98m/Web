@@ -1,0 +1,40 @@
+﻿<html>
+  <head>
+   <title>img로 이미지 넣기</title>
+  </head>
+  <body>
+  <hr>
+  <h1>img로 이미지 넣기</h1>
+   &lt;img src="이미지경로" alt="이미지설명문(대체 텍스트)"&gt;
+  <h2>web용 이미지 형식</h2>
+  <ul>
+   <li>*.gif - 256가지 색상표현 가능. 투명배경 가능, 움짤 지원. 단순한 이미지(로고나 아이콘 버튼 등) 적합</li>
+   <li>*.jpg - 실사느낌의 색상표현 가능.</li>
+   <li>*.png - 위의 두 가지 장점 결합. 실사느낌의 색상표현, 투명배경 가능 </li>
+  </ul>	
+
+  <h2>1. 상대경로로 이미지 넣기</h2>
+    <img src="img/rapeseed.jpg" alt="풍경사진" width="640" height="427">
+    <img src="img/png/monster.png" alt="귀여운 괴물">
+    <img src="../silver-wattle.jpg" alt="alt내용을 확인">
+
+  <h2>2. 절대경로로 이미지 넣기</h2>
+    <img src="https://tpc.googlesyndication.com/simgad/1940307903054611308?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qm0PBfhnavBHKEWp-fL1qzXb6Lb-w" alt="banner">
+
+   <h3>이미지 크기 지정</h3>
+   <ol>
+    <li>원본 (가로, 세로크기를 추가하면 브라우저에 이미지가 빨리 뜸.)
+   <img src="https://tpc.googlesyndication.com/simgad/1940307903054611308?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qm0PBfhnavBHKEWp-fL1qzXb6Lb-w" alt="banner>
+    </li>
+    <li>가로크기 지정
+   <img src="https://tpc.googlesyndication.com/simgad/1940307903054611308?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qm0PBfhnavBHKEWp-fL1qzXb6Lb-w" alt="banner" width="700">
+    </li>
+    <li>세로크기 지정
+   <img src="https://tpc.googlesyndication.com/simgad/1940307903054611308?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qm0PBfhnavBHKEWp-fL1qzXb6Lb-w" alt="banner" height="50">
+    </li>
+    <li>가로,세로크기 지정
+   <img src="https://tpc.googlesyndication.com/simgad/1940307903054611308?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qm0PBfhnavBHKEWp-fL1qzXb6Lb-w" alt="banner" width="50%" height="50%">
+    </li>
+   </ol>
+  </body>
+</html>

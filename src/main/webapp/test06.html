@@ -1,0 +1,238 @@
+﻿<html>
+  <head>
+   <title>form으로 사용자와 연결하기</title>
+  </head>
+  <body>
+  <hr>
+  <h1>form으로 사용자와 연결하기</h1>
+  <hr>
+  <h2>form요소 - input type의 값들</h2>
+  <form action="test.jsp" method="post">
+   <ol>
+    <li><b>input type="text"</b> 주관식. 한 줄 글상자 <br>
+     <label for="nm">이름</label> <input type="text" id="nm">
+    </li>
+    <li>(input에 대한 설명문을 뜻하는 <b>label</b>.<br>
+	label태그와 input태그를 for와 id값으로 서로 연결시켜 줌)<br>
+	size="n"으로 입력창의 길이를 지정.<br>
+	maxlength="n"으로 입력값의 최대치를 제한. <br>
+     <label for="id">ID</label> <input type="id" id="id" maxlength="8">
+    </li>
+    <li><b>input type="password"</b> 주관식. 암호 글상자 <br>
+     <label for="pwd">Password</label> <input type="password" id="pwd" maxlength="12">
+    </li>
+    <li><b>textarea ... .textarea </b> 주관식. 큰 글상자<br>
+	cols="n"와 rows="n"로 상자의 가로크기와 세로크기를 지정.<br>
+     <textarea cols="50" rows="10">자기소개를 해주세요 </textarea>
+    </li>
+    <li><b>input type="radio"</b> 객관식(단일선택형). 라디오버튼 <br>
+     <br> (같은 질문 하의 요소끼리는 name의 값을 서로 일치시킴)
+      초기값으로 지정된 요소는 checked(checked="checked")를 추가.
+     <p>가장 선호 색상은? <br>
+     <label> <input type="radio" name="clr"> 빨강 </label>
+     <label> <input type="radio" name="clr" checked> 초록 </label>
+     <label> <input type="radio" name="clr"> 파랑 </label>
+    </li>
+    <li><b>input type="checkbox"</b> 객관식(다중선택형). <br>
+     <br> (같은 질문 하의 요소끼리는 name의 값을 서로 일치시킴)
+      초기값으로 지정된 요소는 checked(checked="checked")를 추가.
+     <p>선호 색상은? <br>
+     <label> <input type="checkbox" checked > 빨강 </label>
+     <label> <input type="checkbox"> 초록 </label>
+     <label> <input type="checkbox" checked="checked" > 파랑 </label>
+     <label> <input type="checkbox"> 분홍 </label>
+     <label> <input type="checkbox"> 하늘 </label>
+     <p>
+    </li>
+    <li>
+	<b>select ... /select</b> 공간절약향 객관식. 펼침목록(드롭다운리스트) <br>
+	select안에 option으로 항목들을 추가함.
+	selected속성으로 초기값을 지정하고
+        <p>가장 선호 색상은? 
+	<select>
+	 <option>red</option>
+	 <option>blue</option>
+	 <option>green</option>
+	 <option>pink</option>
+	 <option>skyblue</option>
+	 <option>olive</option>
+	 <option>orange</option>
+	</select>
+        </p>
+	<p>가장 선호 색상은? (selected="selected"/selected)
+	 <select>
+	  <option>red</option>
+	  <option>green</option>
+	  <option selected>blue</option>
+	  <option>gray</option>
+	  <option>white</option>
+	  <option>black</option>
+	 </select>
+	</p>
+	<p>상담 가능한 시간은? (다중선택 multiple="multiple"/multiple)
+	 <select multiple>
+	  <option>1교시</option>
+	  <option>2교시</option>
+	  <option selected>3교시</option>
+	  <option>4교시</option>
+	  <option selected>5교시</option>
+	  <option>6교시</option>
+	  <option>7교시</option>
+	  <option>8교시</option>
+	 </select>
+	</p>
+	<p>상담 가능한 시간은? (상자형 size="n" 추가)
+	 <select size="4">
+	  <option>1교시</option>
+	  <option>2교시</option>
+	  <option selected>3교시</option>
+	  <option>4교시</option>
+	  <option>5교시</option>
+	  <option>6교시</option>
+	  <option>7교시</option>
+	  <option>8교시</option>
+	 </select>
+	</p>
+	<b>optgroup</b>태그로 서로 관련있는 option들을 묶어서 그룹화하여 나타낼 수 있고<br> 
+	해당 그룹의 주제, 제목 등은 <b>label</b>속성으로 추가.<br>
+	<br>
+	<p>오전과 오후 중 각 상담 가능한 시간은? <br>
+	 <select>
+	  <optgroup label="오전">
+	   <option>1교시</option>
+	   <option>2교시</option>
+	   <option>3교시</option>
+	   <option>4교시</option>
+	  </optgroup>
+	  <optgroup label="오후">
+	   <option>5교시</option>
+	   <option>6교시</option>
+	   <option>7교시</option>
+	   <option>8교시</option>
+	  </optgroup>
+	 </select>
+	</p>
+    </li>
+    <li><b>input type="file"</b> 파일전송용 상자 <br>
+     <label>보유 자격증 <input type="file"> </label>
+    </li>
+    <li><b>input type="hidden"</b> 보이지 않는 정보 전송용 <br>
+     <input type="hidden" value="silver">
+    </li>
+    <li><b>input type="time"</b> 시간(오전/오후 시,분)을 지정 <br>
+     <label> <input type="time">  </label>
+    </li>
+    <li><b>input type="date"</b> 날짜(년,월,일)을 지정<br> min속성으로 최소값을, max속성으로 최대값 <br>
+     <label> <input type="date">  </label>
+     <label> 생년월일 <input type="date" min="1991-01-01" max="2100-12-21">  </label>
+    </li>
+    <li><b>input type="datetime-local"</b> 날짜와 시간(년,월,일,오전/오후,시,분)을 지정 <br>
+     <label> <input type="datetime-local">  </label>
+    </li>
+    <li><b>input type="week"</b> 날짜(년,주)을 지정<br>
+     <label> <input type="week">  </label>
+    </li>
+    <li><b>input type="month"</b> 날짜(년,월)을 지정<br>
+     <label> <input type="month">  </label>
+    </li>
+    <li><b>input type="number"</b> <br> min속성으로 최소값을, max속성으로 최대값, step속성으로 증감 간격 지정 <br>
+     <label> <input type="number">  </label> <br>
+     <label> 참고서 <input type="number" min="0">  </label>권(min="0") <br>
+     <label> 참고서 <input type="number" max="10">  </label>권(max="10") <br>
+     <label> 색연필 <input type="number" step="12"> 자루 </label>(step="12") <br>
+    </li>
+    <li><b>input type="range"</b> 범위 내의 값을 지정 <br> 
+     min속성으로 최소값을, max속성으로 최대값, step속성으로 증감 간격 지정 <br>
+     <label> <input type="range">  </label>
+    </li>
+    <li><b>input type="tel"</b> 연락처(전화번호)를 지정. <br> 
+	가상키패드에서 숫자 형식으로 바뀔 수 있고 전화 걸기 가능 <br>
+     <label> <input type="tel">  </label>
+    </li>
+    <li><b>input type="email"</b> 연락처(이메일)를 지정 <br>
+	가상키패드에서 @나 영문 형식으로 바뀔 수 있고
+	웹브라우저가 알맞은 email형식인지 체크해줌(@유무 등) <br>
+     <label> <input type="email">  </label>
+    </li>
+    <li><b>input type="url"</b> 연락처(URL, 웹주소)를 지정 <br>
+	가상키패드에서 .com나 영문 형식으로 바뀔 수 있고
+	웹브라우저가 알맞은 웹주소형식인지 체크해줌(http://, https://유무 등) <br>
+     <label>Homepage <input type="url">  </label>
+    </li>
+    <li><b>input type="color"</b>  <br>
+     <label>선호하는 색상은 <input type="color">  </label> 입니다.
+    </li>
+    <li><b>input type="search"</b> 검색창 <br>
+	삭제 버튼(아이콘)이 추가됨
+     <label> <input type="search">  </label>
+    </li>
+   </ol>
+
+   <h2>html4에서 추가된 속성들</h2>
+   <ol>
+    <li><b>autofocus(autofocus="autofocus") </b> <br>
+     <input type="text" autofocus>
+    </li>
+    <li><b>autocomplete="on/off" </b> 자동완성 기능을 켜거나 끔 <br>
+     <label for="name">Name</label>
+     <input type="text" autocomplete="off" id="name">
+    </li>
+    <li><b>required(required="required") </b> 필수입력 요소로 지정 <br>
+     <input type="text" required>
+    </li>
+    <li><b>placeholer="***" </b> 입력예시나 설명문 등 표시 <br>
+     <input type="text" placeholder="영문과숫자조합 8자이내">
+     <input type="tel" placeholder="010-5555-8888">
+    </li>
+    <li><b>readonly(readonly="readonly") </b> 읽기만 가능한 요소로 지정 <br> (입력값이 전송 됨) <br>
+     <input type="text" value="1조" readonly>입니다.
+    </li>
+    <li><b>disabled(disabled="disabled") </b>사용불가능한 요소로 지정 <br> (입력값이 전송 안됨) <br>
+     <input type="text" value="1조 조장" disabled>입니다.
+    </li>
+   </ol>
+ 
+   <h2>fieldset과 legend로 폼요소들 그룹화 하기</h2>
+   <fieldset>
+    <legend>필수입력</legend>
+	
+     <label>Name <input type="text" required> </label> <br>
+     <label>Birthday <input type="date" required> </label>
+   </fieldset>
+   <fieldset>
+     <legend>선택입력</legend>
+
+     <label>Nick <input type="text"> </label> <br>
+     <label>tel <input type="tel"> </label>  
+   </fieldset>
+  <hr>
+     <input type="submit" value="전송">
+     <input type="reset" value="취소"> <br>
+     <input type="button" value="버튼" onclick="alert('Why~~')">
+       <p><b>input type="submit/reset/button"</b>
+	  전송/취소/일반 역할의 버튼 생성. value로 버튼의 글자를 지정
+       </p>    
+   <hr>
+     <button>전송</button>
+     <button type="reset">취소</button> <br>
+     <button type="button"><b>^^</b>버튼</button>
+     <button type="button"><img src="img_submit.gif">Photo</button>
+     <p><b>button .../button </b> 전송 역할의 버튼 생성. <br>
+      취소 or 일반 버튼은 type="reset/button"을 추가. <br>
+      시작과 종료 사이에 버튼의 글자를 적고 다른 태그를 추가 가능
+	(버튼 안에 이미지를 넣거나 웹 아이콘 적용 가능)
+     </p>
+     <hr>
+     <p>
+     <b>input type="image"</b> 전송용 이미지 <br>
+	src속성으로 이미지 지정, width="n"/height="n"으로 가로/세로 크기 지정 가능 <br>
+     <input type="image" src="img_submit.gif" width="30"></p>
+	
+  </form>
+
+  </body>
+</html>
+
+<!--form요소에 대한 설명문 <label /> label태그로 input태그와 연결 시, 명칭부분을 클릭해도 입력창에 커서가 감 -->
+<!-- id값은 페이지 내에서 중복이 불가능한 레이블, 첫글자는 반드시 영어로, -->
+

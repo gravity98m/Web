@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a로 내부링크 걸기</title>
+</head>
+<body>
+	<nav>
+		<a href="test08.html">링크수업-1</a>
+		<a href="test08.html#target">링크수업-1(target)</a>
+		<a href="test09.html">링크수업-2</a>
+	</nav>
+	<hr>
+
+	<h1>a로 내부링크 걸기</h1>
+	<!-- ctrl + f11 -->
+	<pre>  
+	페이지 최상위로 이동하는 top링크 <a href="#">top</a> <br>
+	페이지 특정위치로 이동하는 링크
+	&lt;a href= "<b>#def</b>"&gt;def&lt;/a&gt; --- def를 클릭 시 id가 def인 요소를 찾아서 ↓이동함
+	...
+	&lt;tag id = "abc"&gt;		
+	&lt;tag id = "def"&gt;
+	...	
+	&lt;a href= "<b>#abc</b>"&gt;abc&lt;/a&gt; --- abc를 클릭 시 id가 abc인 요소를 찾아서 ↑이동함
+	
+	[ 다른 문서의 특정 위치로 이동하는 링크 ]
+	&lt;a href="*.html#abc"&gt;링크수업-1(target)&lt;/a&gt;
+	
+	</pre>
+	
+	<h2>photo gallery</h2>
+	<nav id="pg_menu">
+		<a href="#h3_01">photo-01</a>
+		<a href="#h3_02"">photo-02</a>
+		<a href="#h3_03">photo-03</a>
+		<a href="#h3_04">photo-04</a>
+		<a href="#h3_05">photo-05</a>
+		<a href="#h3_06">photo-06</a>
+		<a href="#h3_07">photo-07</a>
+		<a href="#h3_08">photo-08</a>
+		<a href="#h3_09">photo-09</a>
+		<a href="#h3_10">photo-10</a>
+	</nav>
+	<hr>
+	<h3 id="h3_01">photo-01</h3>
+	<img src="img/abend.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_02">photo-02</h3>
+	<img src="img/arches.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_03">photo-03</h3>
+	<img src="img/art.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_04">photo-04</h3>
+	<img src="img/away.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_05">photo-05</h3>
+	<img src="img/backpack.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_06">photo-06</h3>
+	<img src="img/bare.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_07">photo-07</h3>
+	<img src="img/basil.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_08">photo-08</h3>
+	<img src="img/bastei.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_09">photo-09</h3>
+	<img src="img/bear.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<hr>
+	<h3 id="h3_10">photo-10</h3>
+	<img src="img/cat.jpg" alt="" height="800"> <br>
+	<a href="#pg_menu">Go menu</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+</body>
+</html>

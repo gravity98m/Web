@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe</title>
+</head>
+<body>
+	<h1>iframe으로 페이지 내에 다른 페이지 보여주기</h1>
+	
+	&lt;iframe src="보여줄..." width="n" heigt="n"&gt;&lt;/iframe&gt;
+	<iframe width="800" heigt="100">
+		iframe을 지원 못하는 브라우저 사용자용 메세지
+	</iframe>
+	
+	<h2>iframe안에 보여줄 수 있는 종류들</h2>
+		<ul>
+			<li>URL <br>
+				<iframe src="http://www.itwillbs.co.kr/"></iframe>
+			</li>
+			<li>web page - *.html or *.htm <br>
+				<iframe src="test09.html"></iframe>
+			</li>
+			<li>image or movie - *.jpg/*.gif/*.png/*.mp4/*.webm/*.ogg <br>
+				<iframe src="img/cat.jpg"></iframe>
+				<iframe src="img/trees.mp4"></iframe>
+			</li>
+			<li>text file - *.txt</li>
+		</ul>
+		
+	<hr>
+	<h2>iframe안에 링크</h2>
+	링크를 열고자 하는 iframe에 <b>name="abc"</b>를 추가하고
+	링크에 <b>target="abc"</b>를 저장
+	<iframe src="test01.html" width="1000" height="800" name="ifbox01"></iframe>
+	<nav>
+		<a href="test01.html" target="ifbox01">test01.html</a>
+		<a href="test02.html" target="ifbox01">test02.html</a>
+		<a href="test03.html" target="ifbox01">test03.html</a>
+		<a href="test04.html" target="ifbox01">test04.html</a>
+		<a href="test05.html" target="ifbox01">test05.html</a>
+		<a href="test06.html" target="ifbox01">test06.html</a>
+		<a href="test07.html" target="ifbox01">test07.html</a>
+		<a href="test08.html" target="ifbox01">test08.html</a>
+		<a href="test09.html" target="ifbox01">test09.html</a>
+		<a href="test10.html" target="ifbox01">test10.html</a>
+	</nav>
+	
+	
+	<iframe src="img/cat.jpg" width="600" height="400" name="ifbox2"></iframe>
+	
+	<nav>
+		<a href="img/cat.jpg target="ifbox2">photo01</a>
+		<a href="img/pexels-luck.jpg" target="ifbox2">photo02</a>
+		<a href="img/ice.jpg" target="ifbox2">photo03</a>
+	</nav>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+</body>
+</html>
