@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.fs14 {font-size: 14px;}
+
+/* 1. text-align 글자 수평 정렬 */
+.brdr {border: 1px solid;
+width: 300px;}
+
+.ta01 {text-align: left;}
+.ta02 {text-align: center;}
+.ta03 {text-align: right;}
+.ta04 {text-align: justify;}
+
+/* 2. text-decoration 글자의 줄들 */
+.tde01 {text-decoration: overline;}
+.tde02 {text-decoration: line-through;}
+.tde03 {text-decoration: underline;}
+.tde04 {text-decoration: none;
+background-color: #5ed;}
+
+.tde04:hover {
+/* 상태선택자 A:hover는
+요소A에 마우스오버시에 스타일 적용 */
+background-color: #068;
+color: #fff;
+text-decoration: underline;}
+
+/* 3. text-indent 글자 들여쓰기 */
+.brdr01 {border: 1px solid;}
+
+.tin01 {text-indent: 10px;}
+.tin02 {text-indent: 1em;}
+.tin03 {text-indent: 10%;}
+.tin04 {text-indent: -50px;}
+.tin05:hover {
+	text-indent: 2em;
+}
