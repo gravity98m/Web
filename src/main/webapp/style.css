@@ -11,5 +11,6 @@ section {border: 3px solid #47b;
  padding: 1em;
  border-radius: 10px; }
 
-h2 {border-bottom:4px solid #59d;
+section>h2 {border-bottom:4px solid #59d;
 color:#47b; }
+
