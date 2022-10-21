@@ -34,3 +34,50 @@ text-decoration: underline;}
 .tin05:hover {
 	text-indent: 2em;
 }
+.tin06 {text-indent: 3em;}
+
+/* 4. text-transform 대소문자 변형 */
+.ttr01 {text-transform: none;}
+.ttr02 {text-transform: uppercase;}
+.ttr03 {text-transform: lowercase;}
+.ttr04 {text-transform: capitalize;}
+
+/* 5. text-shadow 글자의 그림자 */
+.sh {padding:16px;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+}
+
+.tsh01 {text-shadow: 2px 3px 6px #333;}
+.tsh02 {text-shadow: -2px -3px 4px #333;}
+.tsh03 {text-shadow: 2px 3px 4px #333;
+color: #fff;}
+.tsh03:hover {text-shadow: 0px 0px 4px #fff;
+transition: 1.6s;}
+/* transition: [시간] -> 시간만큼 서서히 적용 */
+.tsh04 {text-shadow: 0px 0px 4px #760;
+color: #fff;}
+
+.bg {background-color: #000;}
+
+.tsh05 {text-shadow: 0 0 20px #cfffef; }
+.tsh06:hover {
+text-shadow: 0 0 12px #ea539a; 
+transition: 1s;}
+
+.tsh07 {
+text-shadow: -2px -2px 8px #fc32de,
+ 2px 2px 8px #00ff40;
+}
+
+.tsh07:hover {
+color: #fc32de;
+transition: 1s;
+}
+
+.tsh08 {text-shadow: 0 0 4px #fff;}
+.tsh08:hover{
+text-shadow: 4px -4px 5px #8080ff;
+transition: 1.2s;
+}
