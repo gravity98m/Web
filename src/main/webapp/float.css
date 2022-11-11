@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+
+#sec01, #sec02 {
+overflow: hidden;
+/* float으로 빠져나간 자식요소를 
+ 감싸기 위함 */
+float: left; 
+/* 자식과 별개로 부모를 나란히 배치하기 위함 */
+width: 40%}
+
+.clear {clear: both;}
+/* float으로 빈공간을 메우기 위해
+밀고올라간 요소를 제자리로 */
+#sec01>p>img {float: left;}
+
+#sec02 img {float: right;}
+
+/* 3.p들을 float: left; */
+#sec03 {overflow: hidden;} 
+/* 부모의 너비가 넓어짐  */
+
+#sec03>p {border: 1px solid red;
+width: 25%;
+float: left;
+/* block인 요소들을 나란히 배치 */
+margin-right: 1%;
+/* display: inline-block; */}
+
+#sec03>div {border: 1px solid blue;
+clear: both;/* float의 영향을 밀고 올라간 
+요소를 제자리로 */}
+
+/* 4. p들을 float: right; */
+#sec04>p {border: 1px solid red; 
+/* 너비값을 주지않고 float을 주면 시각적으로 차이 x */
+width: 25%;
+float: right;}
+
+#sec04>div {border: 1px solid blue;
+clear: both;}
+/* flaot의 영향이 있는 경우에는 제자리로 보내기 위해
+clear: both;를 사용해주어야한다. */
+
+/* 5. float:left */
+#sec05>p {border: 1px solid red;}
+
+#sec05>p:nth-of-type(1) {
+/* A:nth-of-type(n)
+A중에서 n번째 요소를 불러오는 선택자  */
+	float:left;
+	width: 20%;}
+
+#sec05>p:nth-of-type(2) {
+	float: right;
+	width: 20%;
+}
+
+#sec05>div {border: 1px solid blue;
+clear: both;}
+
+nav {border: 1px solid skyblue; 
+background-color: #000;
+overflow: hidden;
+margin: 5em 1em;
+height: 50px;}
+
+
+nav>ul {list-style: none;/* 목록 앞의 모양제거 */}
+
+/* nav li  */
+nav>ul>li {/* border: 1px solid blue; */
+float: left; /* 메뉴들을 가로로 배치용 */
+/*  내용이 별로 없을 경우에는 바로 배치  */
+/* margin-right: 3px; */
+border-left: 3px solid #089;}
+
+nav>ul>li>a {background-color: #ccc;
+width: 120px; height: 30px;
+display: block;/*  메뉴(a)의 크기 지정용 */
+text-decoration: none;
+text-align: center;
+line-height: 30px;/* 수직중앙에 배치
+높이값과 행간값을 일치 (height=line-height)  */
+}
+/* 영역의 heigh값과 line-height의 값을 같게 주면 글자가 중앙에 위치 */
+/* a태그를 넓히기 위해서는 display를 줘야 함  */
+
+nav>ul>li>a:link, nav>ul>li>a:visited {
+	color: #333;
+}
+nav>ul>li>a:hover, nav>ul>li>a:active {
+	background-color:  #acf;
+	color: #025;
+}
+nav>ul>li>a:hover {background-color: #acf;}
+.clear {clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
