@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+ initial-scale=1.0">
+<title>rwd</title>
+<link href="rwd.css" rel="stylesheet">
+</head>
+<body>
+<div class="none">
+ <h1>rwd(Responsive Web Design)</h1>
+ <p>반응형웹. 조건에 따라 알맞은 스타일을 적용하도록 함. <br>
+   Media Queries로 구현(모바일퍼스트가 원칙~)
+ </p>
+</div>
+<h2>Viewport 설정(맞추기)</h2>
+<p>&lt;meta name="viewport" 
+ content="width=device-width, initial-scale=1.0"&gt;
+ <br>모바일에서 화면 축소 방지</p>
+
+<h2>Media Queries구문</h2> <!-- 일반적으로 only와 not은 잘 사용하지 않음  -->
+ <p>@media not|only 장치종류 and (조건) {
+     선택자 {속성:속성값;}
+   }
+ </p>
+<h2>Media Queries 장치 종류 조건</h2>
+  <ul>
+   <li>all - 장치 종류 무관</li>
+   <li>print - 프린터</li>
+   <li>screen - 컴퓨터(모바일기기 포함)</li>
+   <li>speech - 음성낭독기</li>
+  </ul>
+   
+<h2>Media Queries 기타 조건</h2>
+  <ul>
+   <li>width and height of the viewport
+     - 화면 너비나 높이</li> 
+   <li>width and height of the device 
+     - 장치 너비나 높이 </li>
+   <li>orientation (landscape/portrait)
+     - 화면방향(가로/세로)</li>
+   <li>resolution - 해상도</li>
+  </ul>
+
+
+
+
+</body>
+</html>

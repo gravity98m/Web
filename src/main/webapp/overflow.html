@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<link href="style.css" rel="stylesheet">
+<link href="overflow.css" rel="stylesheet">
+</head>
+<body>
+<h1>overflow 영역 밖의 내용 처리법</h1>
+ 
+<ul id="ul-01">
+ <li>overflow:visible; 기본값. 보임 <br>
+   <img alt="cat" src="img/cat.jpg"> <br>
+  overflow:visible; 기본값. 보임 <br>
+ </li>
+ <li>overflow:hidden; 숨김<br>
+   <img alt="cat" src="img/cat.jpg"> <br>
+   overflow:hidden; 숨김<br>
+ </li>
+ <li>overflow:scroll; 스크롤바 생성<br>
+   <img alt="cat" src="img/cat.jpg"> <br>
+   overflow:scroll; 스크롤바 생성<br>
+ </li>
+ <li>overflow:auto; 자동. 스크롤바 생성<br>
+   <img alt="cat" src="img/cat.jpg"> <br>
+   overflow:auto; 자동. 스크롤바 생성<br>
+   </li>
+</ul>
+
+<h2>2-1. overflow:hidden; </h2>
+<div id="box">  
+ <img class="ph" alt="cat" src="img/cat.jpg">
+ <p class="txt">cat</p> 
+</div>
+
+<h2>2-2. overflow:hidden; </h2>
+ <ul>
+  <li>white-space: nowrap; 자동 줄바꿈 금지</li>
+  <li>overflow: hidden; 영역 밖의 내용 숨김</li>
+  <li>text-overflow: ellipsis;
+   영역을 벗어난 글자 말줄임표(...)로 처리</li>
+ </ul>
+ 
+
+<div id="txtbox"> 
+ 영역을 벗어난 글자가 있을 때 말줄임표를 나타내기, 
+ 말줄임표 삼총사 속성
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

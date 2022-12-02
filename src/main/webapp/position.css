@@ -4,8 +4,9 @@
  전체선택자 {기본 여백 초기화 } 
  */
  
- html {scroll-behavior: smooth;
- /* 자연스러운 스크롤 이동 */}
+html {scroll-behavior:smooth
+ /* 자연스러운 스크롤 이동 */;}
+ 
  
   /* 1. 우측 배치 메뉴 */
 #rgt {background-color: #368;
@@ -129,121 +130,119 @@ right: 10px; top:10px;}
 
 .ab03 {position: absolute;
 right: 1em; bottom: 0.7em;}
-
 .ab04 {position: absolute;
-left: 0; bottom: 0;}
+left: 0;
+bottom: 0;}
+
 
 #box {border: 1px solid;
-height: 250px;
+height:250px;
 position: relative;
-overflow: hidden;
-/* 영역밖의 내용 처리 - 숨김 */}
+overflow: hidden
+ /* 영역밖의 내용 처리-숨김 */;}
 
 #box>div {border: 1px solid #056;
 width: 100px; height: 150px;
-padding: 5px;
-box-sizing: content-box; /* 크기 계산 시
-padding 과 border를 포함 */
+padding:5px;
+box-sizing:border-box /*크기 계산시
+  padding과 border를 포함. */;
 color: #fff;
 position: absolute;}
+
+pre>b {background-color: #8fe;}
 
 pre {position: absolute;
 right: 10px;
 font-family: sans-serif;}
 
 pre:nth-of-type(2) {
-/* A:nth-of-type(n)는 
-   A인 요소 중 n번째를 불러오는 선택자
-   (n=숫자나 수식 모두 가능) */
-	top:300px;}
-   
-
+/* A:nth-of-type(n)는
+  A인 요소 중 n번째를 불러오는 선택자 
+  (n=숫자나 수식 모두 가능) */
+	top:300px;} 
+ 
 #box:hover>pre:nth-of-type(2) {
-	right: 400px; top: 50px;
-	transition:1.2s;
-}
+right:400px; top:50px; 
+transition:1.2s;}
+
 
 .box01 {background-color: #006;
-	top: 50px; left: 50px;
-	z-index: 53;}
+ top:50px; left: 50px;
+ z-index: 53;}
 .box02 {background-color: #600;
-	top: 50px; left: 70px;
-	z-index: 52;}
+  top:50px; left: 70px;
+  z-index: 52;}
 .box03 {background-color: #060;
-	top: 50px; left: 90px;
-	z-index: 51;}
+  top:50px; left: 90px;
+  z-index: 51;}
 .box04 {background-color: #624;
-	top: 50px; left: 110px;
-	z-index: 50;}
-
-/* #box:hover>div{
-left: 50px;
-transition: 1s;
-} */
-
+  top:50px; left: 110px;
+  z-index: 50;}
+/* 
+#box:hover>div {
+  left: 50px;	
+  transition:1s;}
+ */
 #box:hover>.box02 {left: 150px;
-	transition: 1s;}
+  transition:1s;}
 #box:hover>.box03 {left: 250px;
-	transition: 1s;}
+  transition:1s;}
 #box:hover>.box04 {left: 350px;
-	transition: 1s;}
+  transition:1s;}
 
-/* 4. position:fixed; 브라우저 기준~고정  */
+
+ /* 4. position:fixed;브라우저 기준~고정 */
 #quick {border-top: 12px solid red;
 border-radius: 10px 10px 0 0
-/* 모서리 라운딩 좌측상단을 시작으로 
-시계방향으로 각각 적용 됨  */;
+ /* 모서리 라운딩 좌측상단을 시작으로 
+ 시계방향으로 각각 적용 됨 */;
 background-color:#000;
 width: 100px;
 position: fixed;
-right: 0;
+right: 0; 
 bottom: -110px;
-opacity: 0.6;/* 요소의 불투명도
-0 ~ 1 사이의 값으로 지정.
-0일 때 완전 투명, 1은 불투명 */}
+opacity: 0.6 /* 요소의 불투명도
+ 0~1사이의 값으로 지정.
+ 0일때 완전 투명, 1은 불투명 */; }
 
 #quick:hover {bottom: 0px;
-opacity: 1;
+opacity:1;
 transition:0.7s;}
 
-#quick>a {
-display: block;
-text-decoration: none;
-text-align: center;
-text-transform: capitalize;}
+#quick>a {display: block;
+ text-decoration: none;
+ text-align: center;
+ text-transform: capitalize; }
 
 #quick>a:nth-of-type(5) {
-	text-transform: uppercase;}
+ text-transform: uppercase;	}
 
 #quick>a:link, #quick>a:visited {
-	border-bottom: 2px dashed #aaa;
+border-bottom: 2px dashed #aaa;
 	color: #fff;}
+
 #quick>a:hover, #quick>a:active {
-	border-bottom: 2px dashed #aa5;
-	color: #ff0;
-}
+border-bottom: 2px dashed #aa5;
+	color: #ff0;}
 
 
-/* 5. position:sticky;
-relative와 fixed의 믹스  */
+/* 5. position:sticky; 
+relative와 fixed의 믹스 */
 #sec04 {
 background-color:
-rgba(255,255,255,0.7);
-/* 색상에서 4번째 a는 alpha.
-색상의 불투명도를 지정(0~1) */
-position: sticky;
-top:30px;
-z-index: 99999;}
-
+ rgba(255,255,255,0.8)
+ /* 색상에서 4번째 a는 alpha.
+  색상의 불투명도를 지정(0~1) */;
+ position: sticky;
+ top:30px;
+ z-index: 99999;}
+ 
 #sec04:hover {
 background-color:
-rgba(255,255,255,1);}
-
+ rgba(255,255,255,1);}
+ 
 #sec04>p {
-	color: #40a;}
-
-
-
+color: #40a;}
 
 
 

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+ body {
+ background-color: skyblue; }
+
+@media screen and (min-width:780px) {
+ body {
+    background-color: blue; 
+    color:#fff;  }
+}
+
+
+@media screen and (min-width:1000px) {
+	 /* 컴퓨터, 화면 너비 ~이상일 때 적용 */
+	body {
+	background-color: navy; 
+	color:#fff; }	
+}
+
+@media print { /* 프린터일 때 적용  */
+ body {
+	background-color: #fff; 
+	color:#000; }
+	
+ .none {display: none /* 화면에서 생략 */;}	
+}
+
+@media screen and (orientation:landscape) {
+	/* 컴퓨터, 화면방향 가로일 때 적용 */
+	.none {background-color: #000;
+	 color: #f00;}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

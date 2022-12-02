@@ -34,17 +34,20 @@
 <ul>
  <li>position:static; 기본값. 변화 없음</li>
  <li>position:relative; 현재 위치에서 ~이동</li>
- <li>position:absolute; 상위요소를 기준으로 ~위치</li>
+ <li>position:absolute; 상위요소를 기준으로 ~위치 <br>
+   (기준이 될 상위요소는 position:relative;로 설정)
+ </li>
  <li>position:fixed; 브라우저를 기준으로 ~고정</li>
- <li>position:sticky;relative와 fixed의 믹스</li>
+ <li>position:sticky; relative와 fixed의 믹스</li>
 </ul>
 
 <h2>거리값</h2>
  <p>left/right/top/bottom: n; </p>
 
+
 <section id="sec04">
-	<h2>position:sticky; relative와 fixed의 믹스</h2>
-	<p>sticky를 할 요소는 다른 상위요소가 있으면 안 됨!</p>
+ <h2>position:sticky; relative와 fixed의 믹스 </h2>
+  <p>sticky를 할 요소는 다른 상위요소가 있으면 안 됨~!</p>
 </section>
 
 <section id="sec01">
@@ -80,39 +83,43 @@
  <p class="ab03">position:absolute; <br>
   right: 1em; bottom: 0.7em;</p>
  <p class="ab04">position:absolute; <br>
-  left: 0; bottom: 0; /p>
+  left: 0; bottom: 0;
+ </p>
  
  <div id="box">
- 	<div class="box01">box01</div>
- 	<div class="box02">box02</div>
- 	<div class="box03">box03</div>
- 	<div class="box04">box04</div>
-	<pre>
-		<b>[ box-sizing:border-box; ]</b>
-	 요소의 크기 계산시 기본값인 content-box는
-	 border과 padding을 제외하므로 
-	 실제 요소가 차지하는 영역은 더 커짐 
-	 <b>border-box</b>로 바꾸면
-	 border과 padding을 포함하여 크기를 계산하므로 
-	 요소가 차지하는 영역의 변화가 없음
-	</pre>
-	<pre>
-	<b>[ z-index:n; ]</b>
-	겹친 요소끼리의 위아래 지정.
-	값이 클수록 상대적으로 위로 올라옴
-	(소스 순서대로 값이 자동으로 1씩 증가)
-	n은 음수값 가능
-	</pre>
+  <div class="box01">box01</div>
+  <div class="box02">box02</div>
+  <div class="box03">box03</div>
+  <div class="box04">box04</div>
+  
+   <pre>
+     <b>[ box-sizing:border-box; ]</b>
+   요소의 크기 계산시 기본값인 content-box는
+   padding과 border를 제외하므로 
+   실제 요소가 차지하는 영역은 더 커짐.
+   <b>border-box</b>로 바꾸면
+   padding과 border를 포함하여 
+   크기를 계산하므로 요소가 차지하는 
+   영역의 변화가 없음
+  </pre> 
+  <pre>
+   <b>[z-index:n;]</b>
+   겹친 요소끼리의 위아래 지정.
+   <b>값이 클수록 상대적으로 위로 올라옴</b>
+   (소스 순서대로 값이 자동 1씩 증가)
+   n은 음수값 가능
+  </pre>
  </div>
 </section>
+
 <aside id="quick">
-<!-- 4. position:fixed; 
-	브라우저 기준~고정 -->
-	<a href="#sec01">sec01</a>
-	<a href="#sec02">sec02</a>
-	<a href="#sec03">sec03</a>
-	<a href="#sec04">sec04</a>
-	<a href="#">top</a>
+ <!-- 4. position:fixed;
+   브라우저 기준~고정 -->
+ <a href="#sec01">sec01</a>
+ <a href="#sec02">sec02</a>
+ <a href="#sec03">sec03</a>
+ <a href="#sec04">sec04</a>
+ <a href="#">top</a>
 </aside>
 
 
